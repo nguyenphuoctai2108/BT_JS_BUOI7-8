@@ -1,11 +1,98 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bài Tập Mảng JavaScript - CyberSoft</title>
   </head>
   <body>
+    <div class="container">
+      <h2>Bài Tập Về Nhà - JS Buổi 7-8</h2>
+
+      <div class="section">
+        <h3>Bước 1: Nhập các số nguyên vào mảng</h3>
+        <input type="number" id="inputNum" placeholder="Nhập số nguyên" />
+        <button onclick="themSo()">Thêm số</button>
+        <button class="btn-danger" onclick="xoaMang()">Xóa làm lại</button>
+        <div class="array-display">
+          Mảng số nguyên của bạn: [
+          <span id="hienThiMang" style="color: #007bff"></span> ]
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Bước 2: Chọn chức năng cần xử lý</h3>
+
+        <button class="btn-func" onclick="tongSoDuong()">
+          1. Tổng số dương
+        </button>
+        <button class="btn-func" onclick="demSoDuong()">2. Đếm số dương</button>
+        <button class="btn-func" onclick="timSoNhoNhat()">
+          3. Tìm số nhỏ nhất
+        </button>
+        <button class="btn-func" onclick="timSoDuongNhoNhat()">
+          4. Tìm số dương nhỏ nhất
+        </button>
+        <button class="btn-func" onclick="timSoChanCuoiCung()">
+          5. Tìm số chẵn cuối cùng
+        </button>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0" />
+
+        <div>
+          <strong>6. Đổi chỗ 2 vị trí:</strong>
+          <input
+            type="number"
+            id="viTri1"
+            placeholder="Vị trí 1 (từ 0)"
+            style="width: 100px"
+          />
+          <input
+            type="number"
+            id="viTri2"
+            placeholder="Vị trí 2 (từ 0)"
+            style="width: 100px"
+          />
+          <button class="btn-func" onclick="doiCho()">Đổi chỗ</button>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0" />
+
+        <button class="btn-func" onclick="sapXepTangDan()">
+          7. Sắp xếp tăng dần
+        </button>
+        <button class="btn-func" onclick="timSoNguyenToDauTien()">
+          8. Tìm số nguyên tố đầu tiên
+        </button>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0" />
+
+        <div>
+          <strong>9. Đếm số nguyên trong mảng số thực mới:</strong> <br />
+          <input
+            type="text"
+            id="inputMangThuc"
+            placeholder="Ví dụ: 1.2, 5, -3, 4.6"
+            style="width: 250px; margin-top: 5px"
+          />
+          <button class="btn-func" onclick="demSoNguyenTrongMangThuc()">
+            Đếm số nguyên
+          </button>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0" />
+
+        <button class="btn-func" onclick="soSanhAmDuong()">
+          10. So sánh số lượng Âm / Dương
+        </button>
+      </div>
+
+      <div class="section" style="background-color: #e9ecef">
+        <h3>KẾT QUẢ HIỂN THỊ:</h3>
+        <div id="ketQua">Vui lòng thêm số vào mảng và chọn chức năng...</div>
+      </div>
+    </div>
+
     <script src="./js/main.js"></script>
   </body>
 </html>
